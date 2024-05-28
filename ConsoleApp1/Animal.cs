@@ -11,16 +11,19 @@ namespace ConsoleApp1
         public string Name { get; set; }
         public int Value { get; set; }
 
-        public Animal(string name, int value) { 
+        public Animal(string name, int value)
+        {
             Name = name;
             Value = value;
         }
 
-        public SayName(string name) {
+        public void SayName(string name)
+        {
             Console.WriteLine($"my name is {name}");
         }
-        public SayValue(int value)
+        public void SayValue(int value)
         {
             Console.WriteLine($"my value is {value}");
         }
     }
+}

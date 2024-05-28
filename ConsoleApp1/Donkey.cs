@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Donkey
+    public class Donkey : Animal
     {
+        public Donkey(string name, int value) : base(name, value)
+        {
+        }
     }
 }
