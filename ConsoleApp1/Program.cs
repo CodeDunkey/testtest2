@@ -11,6 +11,7 @@
             foreach (Animal animal in animals)
             {
                 animal.SayName();animal.SayValue();
+
             }
 
             //Console.WriteLine(animals);
