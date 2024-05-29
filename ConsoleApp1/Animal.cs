@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public abstract class Animal
+    public abstract class Animal : IAnimal
     {
         public string Name { get; set; }
         public int Value { get; set; }
 
-        public Animal(string name, int value)
+        protected Animal(string name, int value)
         {
             Name = name;
             Value = value;
         }
 
-        public void SayName(string name)
+        public void SayName()
         {
-            Console.WriteLine($"my name is {name}");
+            Console.WriteLine($"my name is {Name} ");
         }
-        public void SayValue(int value)
+        public void SayValue()
         {
-            Console.WriteLine($"my value is {value}");
+            Console.Write($"my value is {Value} ");
         }
     }
 }

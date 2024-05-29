@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Donkey : Animal
+    public interface IAnimal
     {
-        public Donkey(string name, int value) : base(name, value) { }
+        string Name { get; set; }
+        int Value { get; set; }
+
+        void SayName();
+        void SayValue();
     }
 }
